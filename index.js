@@ -89,7 +89,7 @@ async function run() {
       res.send(result);
     });
 
-    // Red Api specific email
+    // Red Api specific email JWT varify
     // prottek person er email match kore tar order orderpagee show korbe
     app.get("/order", verifyJWT, async (req, res) => {
       const decodeEmail = req.decoded.email;
