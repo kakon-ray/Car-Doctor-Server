@@ -104,7 +104,7 @@ async function run() {
       }
     });
 
-    // delete api
+    // delete api create
     // delete service
 
     app.delete("/service/:id", async (req, res) => {
